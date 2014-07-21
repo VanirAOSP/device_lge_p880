@@ -78,6 +78,10 @@
 
     <bool name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Device type information conforming to Annex B format in WiFi Direct specification.
+    The default represents a dual-mode smartphone -->
+    <string translatable="false" name="config_wifi_p2p_device_type">1-0050F204-1</string>
+
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
     <bool name="config_automatic_brightness_available">true</bool>
@@ -169,6 +173,9 @@
         <item>255</item>
     </integer-array>
 
+    <!-- Boolean indicating if current platform supports BLE peripheral mode -->
+    <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
+
     <integer name="config_deviceHardwareKeys">7</integer>
 
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
@@ -192,5 +199,8 @@
 
     <!-- Device supports LED flashlight -->
     <bool name="config_enableTorch">true</bool>
+
+    <!-- Indicate whether the SD card is accessible without removing the battery. -->
+    <bool name="config_batterySdCardAccessibility">true</bool>
 
 </resources>
