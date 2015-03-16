@@ -1,8 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter tegra,$(TARGET_BOARD_PLATFORM)),)
-ifneq ($(filter p880,$(TARGET_DEVICE)),)
-
 L_CFLAGS := -g -Wall
 
 #
@@ -49,6 +46,3 @@ LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
 #include $(BUILD_HEAPTRACKED_SHARED_LIBRARY)
-
-endif
-endif
