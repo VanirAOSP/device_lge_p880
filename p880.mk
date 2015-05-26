@@ -114,7 +114,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     mobiledata.interfaces=rmnet0,rmnet1 \
     debug.hwui.render_dirty_regions=false \
-    ro.telephony.ril_class=X3RIL
+    ro.telephony.ril_class=X3RIL \
+    ro.gps.init=true
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
